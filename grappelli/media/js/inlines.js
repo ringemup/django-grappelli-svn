@@ -175,7 +175,7 @@ $.fn.inline = function(options) {
                 totalForms.val(parseInt(totalForms.val(), 10) - 1);
                 
                 // Show add button again once we drop below max
-                if ((maxForms.val() == 0) || (maxForms.val() >= forms.length)) {
+                if ((maxForms.val() == '') || (maxForms.val() >= forms.length)) {
                     showAddButtons();
                 }
                 // Also, update names and ids for all remaining form controls
